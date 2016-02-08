@@ -1,5 +1,5 @@
   #This requires the httr and the jsonlite packages. First we setup the Authorization for our commands.
-  #For this you need to enter you Consumer/API Key, Consumer/API Secret, Token and Token secret in the specified places below.
+  #For this you need to enter your Consumer/API Key, Consumer/API Secret, Token and Token secret in the specified places below.
 myapp = oauth_app("twitter", key="yourConsumerKeyHere",secret="yourConsumerSecretHere")
 sig = sign_oauth1.0(myapp, token = "yourTokenHere", token_secret = "yourTokenSecretHere")
   #We can use the query variable to search Twitter for any set of characters or digits and return the results.
