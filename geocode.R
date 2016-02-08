@@ -1,3 +1,7 @@
+  #This requires the httr and the jsonlite packages. First we setup the Authorization for our commands.
+  #For this you need to enter you Consumer/API Key, Consumer/API Secret, Token and Token secret in the specified places below.
+myapp = oauth_app("twitter", key="yourConsumerKeyHere",secret="yourConsumerSecretHere")
+sig = sign_oauth1.0(myapp, token = "yourTokenHere", token_secret = "yourTokenSecretHere")
   #We can use the geocode variable in the Search API to retrieve Tweets of users within a particular area.
   #In the following example the geocode value (latitude,longitude,radius) is in San Francisco,USA and the
   #command looks for all tweets in that area.
