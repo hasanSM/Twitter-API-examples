@@ -1,3 +1,7 @@
+  #This requires the httr and the jsonlite packages. First we setup the Authorization for our commands.
+  #For this you need to enter your Consumer/API Key, Consumer/API Secret, Token and Token secret in the specified places below.
+myapp = oauth_app("twitter", key="yourConsumerKeyHere",secret="yourConsumerSecretHere")
+sig = sign_oauth1.0(myapp, token = "yourTokenHere", token_secret = "yourTokenSecretHere")
   #We can use the unique user_id of a user to locate and retrieve their profile details and tweets.
   #In the following example the user id is 6253282 and it belongs to @twitterapi.
   #We look to see a timeline of the most recent tweets by the Twitter API account.
