@@ -1,3 +1,7 @@
+  #This requires the httr and the jsonlite packages. First we setup the Authorization for our commands.
+  #For this you need to enter you Consumer/API Key, Consumer/API Secret, Token and Token secret in the specified places below.
+myapp = oauth_app("twitter", key="yourConsumerKeyHere",secret="yourConsumerSecretHere")
+sig = sign_oauth1.0(myapp, token = "yourTokenHere", token_secret = "yourTokenSecretHere")
   #We can use the lat and long variables to locate and retrieve place ids.
   #In the following example the latitude & longitude values are of San Francisco,CA,USA.
   #sig contains my credentials and is used to authenticate the request.
